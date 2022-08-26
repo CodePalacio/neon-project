@@ -172,23 +172,27 @@
                         padding-bottom: 2.9rem;
                         padding-top: 3.8rem;
                         border-bottom: 1px solid $grey-100;
-                        article{
-                            margin-left: 4.3rem;
-                            margin-right: 9.6rem;
-                            
-                            
-                            h3{
-                                color: $grey-400;
+                        .flex-card{
+                            @include flex(center,space-between,row);
+                            article{
+                                width: 63rem;
+                                margin-left: 4.3rem;
+                                margin-right: 9.6rem;
+                                
+                                
+                                h3{
+                                    color: $grey-400;
+                                }
+                                p{
+                                    font-size: 1.8rem;
+                                    line-height: 150%;
+                                    color: $grey-300;
+                                }
                             }
-                            p{
-                                font-size: 1.8rem;
-                                line-height: 150%;
-                                color: $grey-300;
+                            button{
+                                display: flex;
+        
                             }
-                        }
-                        button{
-                            display: flex;
-    
                         }
                     }
                 }
