@@ -89,6 +89,7 @@
 
 .s-app{
     .container{
+        display: flex;
         .app{
             @include flex(start, center, column);
             max-width: 27.7rem;
@@ -97,9 +98,6 @@
                 width: 100%;
                 
                 margin-top: 13rem;
-                .mockup-1{
-                    
-                }
                 .circle-mockup{
                     position: absolute;
                     top: 8.7rem;
@@ -151,6 +149,87 @@
                 }
             }
         }
-        
+        .app-info{
+            margin-left: 14rem;
+            margin-top: 16rem;
+            .beneficios{
+                h2{
+                    max-width: 48.8rem;
+                }
+                a{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    color: $brand-blue;
+                    
+                }
+                ul{
+                    margin-bottom: 3.2rem;
+                    .card-beneficios{
+                        display: flex;
+                        align-items:center;
+                        width: 100%;
+                        max-width: 83.4rem;
+                        padding-bottom: 2.9rem;
+                        padding-top: 3.8rem;
+                        border-bottom: 1px solid $grey-100;
+                        article{
+                            margin-left: 4.3rem;
+                            margin-right: 9.6rem;
+                            
+                            
+                            h3{
+                                color: $grey-400;
+                            }
+                            p{
+                                font-size: 1.8rem;
+                                line-height: 150%;
+                                color: $grey-300;
+                            }
+                        }
+                        button{
+                            display: flex;
+    
+                        }
+                    }
+                }
+            }
+            .pejota{
+                margin-top: 14.4rem;
+                width: 100%;
+                max-width: 80rem;
+                height: 41rem;
+                background: url(../imgs/bg-box-card-neon.svg) no-repeat center center;
+                display: flex;
+                align-items: center;
+                position: relative;
+                .pj-text{
+                    padding-left: 6rem;
+                    h2,h3,p{
+                        color: #FFFFFF;
+                        max-width: 32.7rem;
+                    }
+                    h2{
+                        padding-bottom: 1.1rem;
+                    }
+                    h3,p{
+                        padding-bottom: .8rem;
+                    }
+                    ul{
+                        display: flex;
+                        li{
+                            &:not(:first-child){
+                                padding-left: 1.6rem;
+                            }
+                        }
+                    }
+                }
+                img{
+                    width: 34.2rem;
+                    height: 21.9rem;
+                    position: absolute;
+                    right: -31px;
+                }
+            }
+        }
     }
 }
