@@ -165,8 +165,7 @@
                 ul{
                     margin-bottom: 3.2rem;
                     .card-beneficios{
-                        display: flex;
-                        align-items:center;
+                        @include flex(center, flex-start,row);
                         width: 100%;
                         max-width: 83.4rem;
                         padding-bottom: 2.9rem;
@@ -203,8 +202,7 @@
                 max-width: 80rem;
                 height: 41rem;
                 background: url(../imgs/bg-box-card-neon.svg) no-repeat center center;
-                display: flex;
-                align-items: center;
+                @include flex(center,flex-start,row);
                 position: relative;
                 .pj-text{
                     padding-left: 6rem;
