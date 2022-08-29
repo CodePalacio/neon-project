@@ -249,28 +249,46 @@
 }
 
 .s-social{
-    .titulo-depoimentos{
-        margin-top: 13.4rem;
-        margin-bottom: 4rem;
-        .h2-grey200{
-            color: $grey-200;
-            margin-bottom: 1.4rem;
-        }
-        .h2-grey600{
-            color: $grey-600;
+    .container{
+
+        .titulo-depoimentos{
+            margin-top: 13.4rem;
+            margin-bottom: 4rem;
+            .h2-grey200{
+                color: $grey-200;
+                margin-bottom: 1.4rem;
+            }
+            .h2-grey600{
+                color: $grey-600;
+            }
         }
 
+        .swiper{
+            width: 120rem;
+            height: 25rem;
+            .swiper-pagination{
+                .swiper-pagination-bullet{
+                    background:$brand-yellow;
+                    opacity: .3;
+                    border-radius: 12px;
+                    transition: all .4s;
+                    &-active{
+                        opacity: 1;
+                        width: 17.23px;
+                    }
+                }
+            }
+        }
+        
     }
-    .social-cards{
-        @include flex(center, space-between,row);
-    }
+    
 }
 
 .s-conta-digital{
     .container{
-        @include flex(flex-start,flex-start,column);
+        display: flex;
         .conta-digital-info{
-            margin-top: 13.4rem;
+            margin-top: 10.4rem;
             width: 100%;
             max-width: 54.2rem;
             .conta-digital-titulo{
@@ -314,6 +332,35 @@
                 margin-top: 6rem;
             }
         }
-        
+        .conta-digital-image{
+            position: relative;
+            height: 60rem;
+            width: 71.2rem;
+            margin-top: 12.7rem;
+            margin-left: 11.8rem;
+            figure{
+                img{
+                    position: absolute;
+                }
+                .circle-conta-digital{
+                    right: -15rem;
+                    bottom: 0;
+                }
+                .mockup-1{
+                    top: 8.5rem;
+                }
+                .mockup-2{
+                    left: 25.8rem;
+                }
+                .card-conta-digital{
+                    width: 17.5rem;
+                    height: 12.2rem;
+                    top: 21.5rem;
+                    left: 27.5rem;
+                }
+
+            }
+        }
     }
 }
+
