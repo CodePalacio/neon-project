@@ -259,8 +259,61 @@
         .h2-grey600{
             color: $grey-600;
         }
+
     }
     .social-cards{
         @include flex(center, space-between,row);
+    }
+}
+
+.s-conta-digital{
+    .container{
+        @include flex(flex-start,flex-start,column);
+        .conta-digital-info{
+            margin-top: 13.4rem;
+            width: 100%;
+            max-width: 54.2rem;
+            .conta-digital-titulo{
+                .h2-grey200{
+                    color: $grey-200;
+                    font-weight: 600;
+                }
+                .h2-grey600{
+                    color: $grey-600;
+                    margin-top: .9rem;
+                }
+            }
+            ul{
+                margin-top: 4.5rem;
+                li{
+                    display: flex;
+                    &:not(:last-child){
+                        margin-bottom: 4.5rem;
+                    }
+                    figure{
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        background-color: $brand-green-light;
+                        border-radius: 8px;
+                        @include flex(center,center,row);
+                        margin-right: 2.6rem;
+                    }
+                    article{
+                        h4{
+                            margin-bottom: .4rem;
+                            color: $grey-400;
+                        }
+                        p{
+                            font-size: 1.8rem;
+                            color: $grey-300;
+                        }
+                    }
+                }
+            }
+            button{
+                margin-top: 6rem;
+            }
+        }
+        
     }
 }
