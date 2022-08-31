@@ -1,0 +1,84 @@
+footer{
+    background-color:$brand-blue;
+    .container{
+        .top{
+            display: flex;
+            justify-content:space-between;
+            padding: 4.9rem 0;
+            border-bottom: 2px solid rgba(73, 196, 253, 0.2);
+            .media-icons{
+                display: flex;
+                span{
+                    font-size: 1.4rem;
+                    color: #FFFFFF;
+                    opacity: .7;
+                }
+                a{
+                    padding-left: 3rem;
+                }
+            }
+        }
+        .links-footer{
+            margin-top: 5.7rem;
+            display: flex;
+            justify-content:space-between;
+            padding-bottom: 6.2rem;
+            border-bottom: 2px solid rgba(73, 196, 253, 0.2);
+            .ul-footer{
+                li{
+                    span{
+                        color: #FFFFFF;
+                        line-height: 125%;
+                        font-weight: 600;
+                    }
+                    a{
+                        color: #FFFFFF;
+                        opacity: .7;
+                        font-size: 14px;
+                        line-height: 17px;
+                        
+                    }
+                    &:not(:first-child){
+                        padding-top: 2.9rem;
+                    }
+                }
+            }
+            .contato{
+                
+                .contato-box{
+                    display: flex;
+                    align-items:center;
+                    justify-content:center;
+                    background-color: rgba(0, 164, 240, 0.24);
+                    width: 28rem;
+                    border-radius: 6px;
+                    &:not(:first-child){
+                        margin-top: 2.5rem;
+                    }
+                    article{
+                        padding: 1.7rem 0 1.7rem 1.7rem;
+                        span{
+                            color: #FFFFFF;
+                            line-height:150%;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+        .mensagem{
+            margin-top:3.9rem;
+            border-bottom: 4px solid $brand-yellow;
+            p{
+                color: #FFFFFF;
+                font-size: 1.4rem;
+                opacity: .8;
+                line-height:150%;
+                padding-left: 4rem;
+                max-width: 66rem;
+                padding-bottom: 3.4rem;
+            }
+        }
+
+    }
+}
