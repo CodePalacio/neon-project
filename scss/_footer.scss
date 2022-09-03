@@ -30,6 +30,7 @@ footer{
                         color: #FFFFFF;
                         line-height: 125%;
                         font-weight: 600;
+                        font-family: 'Poppins', sans-serif;
                     }
                     a{
                         color: #FFFFFF;
@@ -46,18 +47,21 @@ footer{
             .contato{
                 
                 .contato-box{
-                    display: flex;
-                    align-items:center;
-                    justify-content:center;
+                    @include flex(center,flex-start,row);
                     background-color: rgba(0, 164, 240, 0.24);
-                    width: 28rem;
+                    width: 100%;
+                    max-width: 28rem;
                     border-radius: 6px;
                     &:not(:first-child){
                         margin-top: 2.5rem;
                     }
+                    figure{
+                        padding-left: 2.5rem;
+                    }
                     article{
-                        padding: 1.7rem 0 1.7rem 1.7rem;
+                        padding:1.7rem;
                         span{
+                            display: inline-block;
                             color: #FFFFFF;
                             line-height:150%;
                             font-size: 1.4rem;
@@ -75,6 +79,7 @@ footer{
                 opacity: .8;
                 line-height:150%;
                 padding-left: 4rem;
+                width: 100%;
                 max-width: 66rem;
                 padding-bottom: 3.4rem;
             }
