@@ -28,15 +28,56 @@ header{
                         &:hover{
                             color: $brand-yellow;
                         }
-                    
                     }
                 }
                 
             }
-            button{
+            .btn-secondary{
                 margin-left: 5.9rem;
                 color: #FFFFFF;
                 border-color: #FFFFFF;
+            }
+            .btn-mobile{
+                display: none;
+            }
+        }
+    }
+    @include responsive(1050px){
+        .container{
+            .navbar{
+                ul{
+                    li{
+                        &:not(:first-child){
+                            margin-left:2.8rem
+                        }
+                    }
+                }
+        }
+        }
+    }
+    @include responsive(991px){
+        .container{
+            .logo{
+                width: 10.8rem;
+            }
+            .navbar{
+                ul{
+                    display: none;
+                }
+                .btn-mobile{
+                    display: block;
+                    margin-left: 4rem;
+                }
+            }
+        }
+    }
+    @include responsive(480px){
+        height: 7.3rem;
+        .container{
+            .navbar{
+                .btn-secondary{
+                    display: none;
+                }
             }
         }
     }
