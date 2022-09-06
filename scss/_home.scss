@@ -42,8 +42,8 @@
                     }
                     span{
                         max-width: 12.7rem;
-                        font-size: 18px;
-                        line-height: 22px;
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
                         color: #FFFFFF;
                         margin-left: 1.2rem;
                     }
@@ -59,8 +59,8 @@
                 text-align: center;
                 margin-bottom: 6.7rem;
                 font-weight: 600;
-                font-size: 56px;
-                line-height: 84px;
+                font-size: 5.6rem;
+                line-height: 8.4rem;
                 letter-spacing: -2px;
                 color: #FFFFFF;
                 opacity: 0.4;
@@ -73,18 +73,64 @@
                     position: absolute;
                 }
                 .circle{
-                    right: 43px;
+                    right: 4.3rem;
+                    max-width: 55.3rem;
                 }
                 .back{
-                    bottom: 46px;
-                    right: 86px;
+                    bottom: 4.6rem;
+                    right: 8.6rem;
+                    max-width: 35.2rem;
                 }
                 .front{
-                    top: 41px;
+                    top: 4.1rem;
+                    max-width: 43.5rem;
+                }
+            }
+        }
+        @include responsive(1440px){
+            .bloco-imagem{
+                margin-right: -12.3rem
+            }
+        }
+        @include responsive(1366px){
+            .bloco-imagem{
+                margin-right: -9rem;
+                .imagem{
+                    .back{
+                        right: 2rem;
+                    }
+                }
+            }
+        }
+        
+    }
+    @include responsive(1150px){
+        padding-top: 13.5rem;
+        .container{
+            .bloco-imagem{
+                margin-right: -5rem;
+                h2{
+                    font-size: 4.6rem;
+                }
+                .imagem{
+                    .circle{
+                        width: 45rem;
+                        left: 2.3rem;
+                    }
+                    .front{
+                        left: -4rem;
+                        width: 36.3rem;
+                    }
+                    .back{
+                        width: 31.1rem;
+                        right: 10rem;
+                        bottom: 10rem;
+                    }
                 }
             }
         }
     }
+    
 }
 
 .s-app{
