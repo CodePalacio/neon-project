@@ -461,16 +461,27 @@
             .app-info{
                 margin-left: 3rem;
                 .beneficios{
-                    margin: 0 auto;
+                    max-width: 67.3rem;
+                    margin: 0 5.5rem 0 4rem;
                     h2{
                         text-align: center;
                         max-width: 44rem;
                         margin: 0 auto;
                     }
+                    a{
+                        display: block;
+                        text-align: center;
+                        &:after{
+                            display: none;
+                        }
+                    }
 
                 }
                 .pejota{
                     max-width: 68.8rem;
+                    img{
+                        right: -45px;
+                    }
                 }
             }
         }
@@ -480,11 +491,16 @@
             .app-info{
                 
                 .beneficios{
+                    margin-left: 0;
+                    padding: 0;
                     h2{
+                        width: 31.6rem;
                         font-size: 2.8rem;
+                        margin-left: -1.5rem;
                     }
                     .card-beneficios{
-                        
+                        max-width: 33.3rem;
+                        width: 100%;
                         .flex-card{
                             max-width: 38rem;
                             align-items: flex-start !important;;
