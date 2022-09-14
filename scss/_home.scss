@@ -629,7 +629,7 @@
                     padding-top: 4rem;
                     .card-depoimento{
                         max-width: 35.8rem;
-                        
+                        height: 25.3rem;
                     }
                 }
                 .swiper-pagination{
@@ -664,7 +664,7 @@
                 }
                 .swiper-pagination{
                     top: 0px;
-                    left: 0px;
+                    left: -30px;
                 }
             }
         }
@@ -752,14 +752,105 @@
     }
     @include responsive(1150px){
         .container{
+            @include flex(center,center,column);
             .conta-digital-info{
                 margin-left: 2rem;
                 margin-top: 8rem;
+                text-align: center;
+                .conta-digital-titulo{
+                    text-align: center;
+                }
+                ul{
+                    text-align: left;
+                }
+                .btn-primary{
+                    
+                }
+            }
+            .conta-digital-image{
+                margin: 8rem 0;
+                .circle-conta-digital{
+                    left: 80px;
+                }
+                .mockup-1{
+                    left: 20px;
+                }
+                .mockup-2{
+                    left: 300px !important;
+                    top: 0;
+                }
+                .card-conta-digital{
+                    left: 320px !important;
+                }
             }
         }
     }
     @include responsive(991px){
-
+        padding-bottom: 7rem;
+        .conta-digital-info{
+            margin: 1rem auto !important;
+            .h2-grey200{
+                font-size: 2.4rem;
+            }
+            .h2-grey600{
+                font-size: 2.8rem;
+            }
+            ul{
+                li{
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    
+                    article{
+                        h4{
+                            font-size: 2rem;
+                            margin-top: 1rem;
+                        }
+                        p{
+                            font-size: 1.4rem !important;
+                            max-width: 23.8rem;
+                            margin: 0 auto;
+                        }
+                    }
+                    figure{
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+            button{
+                margin-top: 4rem;
+            }
+        }
+        .conta-digital-image{
+            figure{
+                img{
+                    padding-left: 6.5rem;
+                }
+            }
+        }
+    }
+    @include responsive(480px){
+        .conta-digital-image{
+            height: 32.3rem !important;
+            figure{
+                img{
+                    
+                    height: 32.3rem;
+                }
+                .mockup-1{
+                    left: 100px !important ;
+                }
+                .circle-conta-digital{
+                    top: 100px;
+                    left: initial;
+                    
+                }
+                .card-conta-digital{
+                    top: 90px !important;
+                }
+            }
+            
+        }
     }
     
 }
