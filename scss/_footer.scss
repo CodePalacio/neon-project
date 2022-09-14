@@ -86,4 +86,53 @@ footer{
         }
 
     }
+    @include responsive(1050px){
+        .container{
+            .links-footer{
+                max-width: 64rem;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                .ul-footer{
+                    padding-top: 4rem;
+                }
+            }
+        }
+    }
+    @include responsive(991px){
+        .container{
+            .links-footer{
+                position: relative;
+                justify-content:flex-start;
+                .ul-footer{
+                    width: 33%;
+                    
+                }
+                .contato{
+                    position: absolute;
+                    right: 0;
+                    bottom: 10rem;
+                }
+                
+            }
+            .mensagem{
+                p{
+                    margin: 0 auto;
+                    text-align: center;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    @include responsive(480px){
+        .container{
+            .links-footer{
+                .ul-footer{
+                    width: 50%;
+                }
+                .contato{
+                    bottom: 1rem;
+                }
+            }
+        }
+    }
 }
