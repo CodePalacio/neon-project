@@ -80,10 +80,12 @@
                     bottom: 4.6rem;
                     right: 8.6rem;
                     max-width: 35.2rem;
+                    animation: floating 7s infinite;
                 }
                 .front{
                     top: 4.1rem;
                     max-width: 43.5rem;
+                    animation: floating 5s infinite;
                 }
             }
         }
@@ -847,5 +849,17 @@
         }
     }
     
+}
+
+@keyframes floating{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
